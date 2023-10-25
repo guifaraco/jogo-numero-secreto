@@ -14,7 +14,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTextoNaTela("h1", "Jogo do número secreto");
-    exibirTextoNaTela("p", "Escolha um número entre 1 e 50");
+    exibirTextoNaTela("p", "Escolha um número entre 1 e 100");
 }
 
 function verificarChute() {
@@ -38,10 +38,10 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * 50 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
-    if (quantidadeDeElementosNaLista == 50) {
+    if (quantidadeDeElementosNaLista == 100) {
         listaDeNumerosSorteados = [];
     }
 
